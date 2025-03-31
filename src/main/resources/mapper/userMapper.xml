@@ -11,7 +11,7 @@
 
     <select id="login" parameterType="String" resultType="hjk.algo.model.User">
         SELECT *
-        FROM MEMBER
+        FROM member
         WHERE login_id = #{loginId}
     </select>
 </mapper>

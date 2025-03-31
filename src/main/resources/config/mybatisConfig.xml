@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="logImpl" value="SLF4J" />
+
+        <setting name="cacheEnabled"              value="false" />
+        <setting name="defaultExecutorType"       value="REUSE" />
+        <setting name="lazyLoadingEnabled"        value="false"/>
+        <setting name="multipleResultSetsEnabled" value="true"/>
+        <setting name="useColumnLabel"            value="true"/>
+        <setting name="useGeneratedKeys"          value="false"/>
+
+        <setting name="defaultStatementTimeout"   value="25000"/>
+        <!-- snake to camel -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+</configuration>

@@ -1,0 +1,81 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.4.3'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'hjk'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //의존성 추가
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    //poi Excel
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
+    // Redis
+    // JSON
+    implementation 'com.google.code.gson:gson:2.9.0'
+    // Security
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.apache.commons:commons-lang3:3.12.0'
+    // myBatis
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+    //thymeleaf
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.0.0'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5:3.0.4.RELEASE'
+    implementation 'org.mindrot:jbcrypt:0.4'
+    // AspectJ
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+    // Swagger
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+    // MySQL
+
+    // JWT
+
+    // PageHelper
+    implementation 'com.github.pagehelper:pagehelper-spring-boot-starter:2.1.0'
+
+    // 컴파일 전용 의존성, 최종 빌드(런타임) 에는 포함 되지 않는다
+    compileOnly 'org.projectlombok:lombok'
+
+    // 개발 전용 의존성
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // 해당 라이브러리를 애너테이션 프로세서로 사용함을 지정, 이는 컴파일 시간에 에너테이션을 처리하는데 필요함을 의미
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // JUnit, AssertJ및 Mockito같은 도구를 제공하여 테스트 쉽게 작성 하도록 함.
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
+
+    // 테스트를 위한 런타임 전용 의존성 추가
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // actuator
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+}
+tasks.named('test') {
+    useJUnitPlatform()
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Session Debug</title>
+</head>
+<body>
+    <h1>세션 데이터</h1>
+    <ul>
+        <li th:each="attr : ${session}">
+            <span th:text="${attr.key}"></span>:
+            <span th:text="${attr.value}"></span>
+        </li>
+    </ul>
+</body>
+</html>

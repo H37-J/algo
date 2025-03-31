@@ -1,0 +1,78 @@
+2025-04-01 01:38:02.170 [restartedMain] INFO  hjk.algo.AlgoApplication.logStarting:53 - Starting AlgoApplication using Java 17.0.14 with PID 24068 (C:\Users\hjk\Desktop\project\git\algo\build\classes\java\main started by hjk in C:\Users\hjk\Desktop\project\git\algo)
+2025-04-01 01:38:02.173 [restartedMain] INFO  hjk.algo.AlgoApplication.logStartupProfileInfo:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-01 01:38:02.339 [restartedMain] INFO  o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-01 01:38:02.340 [restartedMain] INFO  o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-01 01:38:03.505 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:111 - Tomcat initialized with port 8080 (http)
+2025-04-01 01:38:03.512 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-01 01:38:03.512 [restartedMain] INFO  org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2025-04-01 01:38:03.512 [restartedMain] INFO  org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-01 01:38:03.555 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2025-04-01 01:38:03.555 [restartedMain] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:301 - Root WebApplicationContext: initialization completed in 1213 ms
+2025-04-01 01:38:03.919 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer.configure:80 - Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthenticationProvider
+2025-04-01 01:38:04.245 [restartedMain] INFO  o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:60 - Exposing 6 endpoints beneath base path '/actuator'
+2025-04-01 01:38:04.792 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:59 - LiveReload server is running on port 35729
+2025-04-01 01:38:04.826 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-01 01:38:04.838 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.start:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-04-01 01:38:04.848 [restartedMain] INFO  hjk.algo.AlgoApplication.logStarted:59 - Started AlgoApplication in 2.935 seconds (process running for 3.634)
+2025-04-01 01:38:05.442 [RMI TCP Connection(3)-192.168.219.111] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-01 01:38:05.442 [RMI TCP Connection(3)-192.168.219.111] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2025-04-01 01:38:05.443 [RMI TCP Connection(3)-192.168.219.111] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 1 ms
+2025-04-01 01:38:05.445 [RMI TCP Connection(2)-192.168.219.111] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:109 - HikariPool-1 - Starting...
+2025-04-01 01:38:05.648 [RMI TCP Connection(2)-192.168.219.111] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:554 - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 23814f08-d052-4f25-9e7b-705e52db04a4
+2025-04-01 01:38:05.658 [RMI TCP Connection(2)-192.168.219.111] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:122 - HikariPool-1 - Start completed.
+2025-04-01 01:38:31.733 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01 01:38:32.095 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown.doShutdown:76 - Graceful shutdown complete
+2025-04-01 01:38:32.101 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:349 - HikariPool-1 - Shutdown initiated...
+2025-04-01 01:38:32.103 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:351 - HikariPool-1 - Shutdown completed.
+2025-04-01 01:38:34.058 [restartedMain] INFO  hjk.algo.AlgoApplication.logStarting:53 - Starting AlgoApplication using Java 17.0.14 with PID 24580 (C:\Users\hjk\Desktop\project\git\algo\build\classes\java\main started by hjk in C:\Users\hjk\Desktop\project\git\algo)
+2025-04-01 01:38:34.061 [restartedMain] INFO  hjk.algo.AlgoApplication.logStartupProfileInfo:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-01 01:38:34.201 [restartedMain] INFO  o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-01 01:38:34.202 [restartedMain] INFO  o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-01 01:38:35.343 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:111 - Tomcat initialized with port 8080 (http)
+2025-04-01 01:38:35.351 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-01 01:38:35.353 [restartedMain] INFO  org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2025-04-01 01:38:35.353 [restartedMain] INFO  org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-01 01:38:35.393 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2025-04-01 01:38:35.394 [restartedMain] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:301 - Root WebApplicationContext: initialization completed in 1192 ms
+2025-04-01 01:38:35.815 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer.configure:80 - Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthenticationProvider
+2025-04-01 01:38:36.134 [restartedMain] INFO  o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:60 - Exposing 6 endpoints beneath base path '/actuator'
+2025-04-01 01:38:36.683 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:59 - LiveReload server is running on port 35729
+2025-04-01 01:38:36.720 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-01 01:38:36.732 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.start:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-04-01 01:38:36.742 [restartedMain] INFO  hjk.algo.AlgoApplication.logStarted:59 - Started AlgoApplication in 2.916 seconds (process running for 3.505)
+2025-04-01 01:38:37.057 [RMI TCP Connection(2)-192.168.219.111] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-01 01:38:37.057 [RMI TCP Connection(2)-192.168.219.111] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2025-04-01 01:38:37.059 [RMI TCP Connection(2)-192.168.219.111] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 2 ms
+2025-04-01 01:38:37.061 [RMI TCP Connection(3)-192.168.219.111] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:109 - HikariPool-1 - Starting...
+2025-04-01 01:38:37.223 [RMI TCP Connection(3)-192.168.219.111] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:554 - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: c58d8276-2d5d-47f8-b02b-0d68882c7b23
+2025-04-01 01:38:37.225 [RMI TCP Connection(3)-192.168.219.111] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:122 - HikariPool-1 - Start completed.
+2025-04-01 01:38:47.164 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01 01:38:47.548 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown.doShutdown:76 - Graceful shutdown complete
+2025-04-01 01:38:47.554 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:349 - HikariPool-1 - Shutdown initiated...
+2025-04-01 01:38:47.556 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:351 - HikariPool-1 - Shutdown completed.
+2025-04-01 01:38:49.327 [restartedMain] INFO  hjk.algo.AlgoApplication.logStarting:53 - Starting AlgoApplication using Java 17.0.14 with PID 2520 (C:\Users\hjk\Desktop\project\git\algo\build\classes\java\main started by hjk in C:\Users\hjk\Desktop\project\git\algo)
+2025-04-01 01:38:49.331 [restartedMain] INFO  hjk.algo.AlgoApplication.logStartupProfileInfo:652 - No active profile set, falling back to 1 default profile: "default"
+2025-04-01 01:38:49.479 [restartedMain] INFO  o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-01 01:38:49.479 [restartedMain] INFO  o.s.b.devtools.env.DevToolsPropertyDefaultsPostProcessor.logTo:252 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-01 01:38:50.594 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:111 - Tomcat initialized with port 8080 (http)
+2025-04-01 01:38:50.602 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol.log:173 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-04-01 01:38:50.603 [restartedMain] INFO  org.apache.catalina.core.StandardService.log:173 - Starting service [Tomcat]
+2025-04-01 01:38:50.603 [restartedMain] INFO  org.apache.catalina.core.StandardEngine.log:173 - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-04-01 01:38:50.643 [restartedMain] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring embedded WebApplicationContext
+2025-04-01 01:38:50.643 [restartedMain] INFO  o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:301 - Root WebApplicationContext: initialization completed in 1164 ms
+2025-04-01 01:38:51.050 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer.configure:80 - Global AuthenticationManager configured with AuthenticationProvider bean with name customAuthenticationProvider
+2025-04-01 01:38:51.395 [restartedMain] INFO  o.s.boot.actuate.endpoint.web.EndpointLinksResolver.<init>:60 - Exposing 6 endpoints beneath base path '/actuator'
+2025-04-01 01:38:51.901 [restartedMain] INFO  o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:59 - LiveReload server is running on port 35729
+2025-04-01 01:38:51.930 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol.log:173 - Starting ProtocolHandler ["http-nio-8080"]
+2025-04-01 01:38:51.941 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer.start:243 - Tomcat started on port 8080 (http) with context path '/'
+2025-04-01 01:38:51.952 [restartedMain] INFO  hjk.algo.AlgoApplication.logStarted:59 - Started AlgoApplication in 2.854 seconds (process running for 3.451)
+2025-04-01 01:38:52.193 [RMI TCP Connection(2)-192.168.219.111] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-01 01:38:52.194 [RMI TCP Connection(2)-192.168.219.111] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:532 - Initializing Servlet 'dispatcherServlet'
+2025-04-01 01:38:52.195 [RMI TCP Connection(2)-192.168.219.111] INFO  org.springframework.web.servlet.DispatcherServlet.initServletBean:554 - Completed initialization in 1 ms
+2025-04-01 01:38:52.196 [RMI TCP Connection(3)-192.168.219.111] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:109 - HikariPool-1 - Starting...
+2025-04-01 01:38:52.344 [RMI TCP Connection(3)-192.168.219.111] INFO  com.zaxxer.hikari.pool.HikariPool.checkFailFast:554 - HikariPool-1 - Added connection ConnectionID:1 ClientConnectionId: 6a89dfee-4d1f-43e6-bc5a-f3222ad6eb5c
+2025-04-01 01:38:52.351 [RMI TCP Connection(3)-192.168.219.111] INFO  com.zaxxer.hikari.HikariDataSource.getConnection:122 - HikariPool-1 - Start completed.
+2025-04-01 01:39:08.033 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown.shutDownGracefully:54 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-01 01:39:08.404 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown.doShutdown:76 - Graceful shutdown complete
+2025-04-01 01:39:08.409 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:349 - HikariPool-1 - Shutdown initiated...
+2025-04-01 01:39:08.412 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource.close:351 - HikariPool-1 - Shutdown completed.

@@ -2596,20 +2596,38 @@
                         }
 
                         dangerouslyPasteHTML(t, e) {
-                            let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c.Ay.sources.API;
-                            if ("string" == typeof t) {
-                                const n = this.convert({
-                                    html: t,
-                                    text: ""
-                                });
-                                this.quill.setContents(n, e), this.quill.setSelection(0, c.Ay.sources.SILENT)
+                            console.log(t)
+                            document.querySelector('.ql-editor').remove()
+                            document.querySelector('.ql-tooltip').remove()
+                            if (!document.querySelector('#edi')) {
+                                const div = document.createElement('div')
+                                const editor = document.querySelector('#editor')
+                                div.innerHTML = t
+                                div.id = 'edi'
+                                div.className = 'ql-editor'
+                                div.setAttribute('contenteditable', true)
+                                console.log(div,editor)
+                                editor.appendChild(div)
                             } else {
-                                const r = this.convert({
-                                    html: e,
-                                    text: ""
-                                });
-                                this.quill.updateContents((new(s())).retain(t).concat(r), n), this.quill.setSelection(t + r.length(), c.Ay.sources.SILENT)
+                                const edi = document.querySelector('#edi')
+                                const div = document.createElement('div')
+                                div.innerHTML = e.html === '' ? e.text : e.html
+                                edi.appendChild(div)
                             }
+                            // let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c.Ay.sources.API;
+                            // if ("string" == typeof t) {
+                            //     const n = this.convert({
+                            //         html: t,
+                            //         text: ""
+                            //     });
+                            //     this.quill.setContents(n, e), this.quill.setSelection(0, c.Ay.sources.SILENT)
+                            // } else {
+                            //     const r = this.convert({
+                            //         html: e,
+                            //         text: ""
+                            //     });
+                            //     this.quill.updateContents((new(s())).retain(t).concat(r), n), this.quill.setSelection(t + r.length(), c.Ay.sources.SILENT)
+                            // }
                         }
 
                         onCaptureCopy(t) {

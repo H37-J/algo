@@ -2666,12 +2666,21 @@
                         }
 
                         onPaste(t, e) {
-                            const div = document.createElement('div')
-                            const editor = document.querySelector('#editor')
-                            div.innerHTML = e.html
-                            div.setAttribute('contenteditable', true)
-                            console.log(div,editor)
-                            editor.appendChild(div)
+                            console.log(t, e)
+                            if (!document.querySelector('#edi')) {
+                                const div = document.createElement('div')
+                                const editor = document.querySelector('#editor')
+                                div.innerHTML = e.html === '' ? e.text : e.html
+                                div.id = 'edi'
+                                div.setAttribute('contenteditable', true)
+                                console.log(div,editor)
+                                editor.appendChild(div)
+                            } else {
+                                const edi = document.querySelector('#edi')
+                                const div = document.createElement('div')
+                                div.innerHTML = e.html === '' ? e.text : e.html
+                                edi.appendChild(div)
+                            }
                             // let {
                             //     text: n,
                             //     html: r
@@ -2686,9 +2695,8 @@
                             //     html: r
                             // });
                             // const l = (new(s())).retain(t.index).delete(t.length).concat(o);
-                            // this.quill.updateContents(l, c.Ay.sources.USER),
-                            //     this.quill.setSelection(l.length() - t.length, c.Ay.sources.SILENT), this.quill.scrollSelectionIntoView()
-
+                            // this.quill.updateContents(l, c.Ay.sources.USER), this.quill.setSelection(l.length() - t.length, c.Ay.sources.SILENT),
+                            //     this.quill.scrollSelectionIntoView()
                         }
 
                         prepareMatching(t, e) {

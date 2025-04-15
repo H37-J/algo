@@ -1,25 +1,104 @@
 <!DOCTYPE html>
-<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <link href="/css/bootstrap.css" rel="stylesheet"/>-->
-<!--    <link href="/css/bootstrap-utilities.css" rel="stylesheet"/>-->
-<!--    <link href="/css/bootstrap-utilities.rtl.css" rel="stylesheet"/>-->
-<!--    <script src="/js/bootstrap.js"></script>-->
-    <link href="/css/out.css" rel="stylesheet">
-<!--    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
-    <title>Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Editor 예제</title>
+    <style>
+        #editor-container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            min-height: 200px;
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.3/dist/quill.snow.css" rel="stylesheet" />
 </head>
 <body>
+<div id="editor"></div>
 
 
-<h1 class="f">
-    <div class="">test</div>
-    <div class="">test</div>
-    <div class="">test</div>
-</h1>
-<footer th:replace="~{/footer}"></footer>
 
 </body>
+<script src="../static/js/test.js"></script>
+<script>
+    // HTML 삽입 함수
+    window.insertStyledHtml = function(html) {
+        const range = quill.getSelection();
+        quill.clipboard.dangerouslyPasteHTML(range.index, html);
+    };
+
+    // HTML 가져오기 함수
+    window.getStyledHtml = function() {
+        const editor = document.querySelector('.ql-editor').cloneNode(true);
+        return editor.innerHTML;
+    };
+
+    const Delta = Quill.import('delta');
+    const ClipBoard = Quill.import('modules/clipboard')
+    const quill = new Quill('#editor', {
+        theme: 'snow',
+        modules: {
+            clipboard: {
+                matchVisual: false, // 시각적 스타일 강제 적용 방지
+                matchers: [
+                    [Node.ELEMENT_NODE, (node, delta) => {
+                        const attributes = {};
+
+                        // 모든 HTML 속성 보존
+                        Array.from(node.attributes).forEach(attr => {
+                            attributes[attr.name] = attr.value;
+                        });
+
+                        return delta.compose(new Delta().retain(delta.length(), { attributes }));
+                    }]
+                ]
+            }
+        },
+    });
+
+
+    class CustomClipboard extends ClipBoard {
+
+        onPaste(e) {
+            console.log('cascacas')
+            e.preventDefault();
+            const range = this.quill.getSelection();
+            const html = e.clipboardData.getData('text/html');
+
+            if (html) {
+                this.pasteHtml(html, range);
+            } else {
+                const text = e.clipboardData.getData('text/plain');
+                this.quill.insertText(range.index, text);
+            }
+        }
+
+        pasteHtml(html, range) {
+            const container = document.createElement('div');
+            container.innerHTML = html;
+
+            // 스타일 태그 보존
+            const styles = container.querySelectorAll('style');
+            styles.forEach(style => {
+                document.head.appendChild(style.cloneNode(true));
+            });
+
+            // 내용 삽입
+            this.quill.clipboard.dangerouslyPasteHTML(
+                range.index,
+                container.innerHTML,
+                'silent'
+            );
+        }
+    }
+
+    Quill.register('modules/clipboard', CustomClipboard, true);
+
+
+
+</script>
+
 </html>
